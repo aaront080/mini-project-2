@@ -1,29 +1,42 @@
 :root {
     --text-blueviolet: blueviolet;
-    --text-white: white
+    --text-white: white;
+    --text-pink: rgba(232, 102, 236);
 
+}
+
+body {
+    background-color: gray;
 }
 
 header {
-background-color:grey;
-
+    text-align: center;
 }
 
-h1 {
-color: blueviolet;
-text-align: center;
-
+header h1 {
+    color: var(--text-pink);
 }
 
 header p {
     color: white;
-    text-align: center;
+}
+
+.card h2 {
+    color: var(--text-pink);
+}
+
+.card p {
+    color: var(--text-pink);
+}
+
+.card code {
+    color: white;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    background-color: brown;
+    border: dashed white;
     margin: 10px;
     width: 400px;
     height: 300px;
@@ -33,4 +46,11 @@ header p {
     display: flex;
     flex-wrap: wrap;
     width:100%;
-  }
+}
+
+.card code {
+background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+)
+}
