@@ -62,12 +62,17 @@
       </div>
       <div class="card" id="card-5">
         <h2>Box Transition Glow</h2>
-        <p>Use transition and box shadows to glow on hover.</p>
+        <p>Use transition and boxshadows to glow on hover.</p>
         <code>
-          .row {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+          .code-card .card-header {
+            border-radius: 8px;
+            transition: all 0.5s ease-in-out;
+          }
+          .code-card:hover,
+          .code-card:hover .card-header {
+            box-shadow: inset 0px 0px 8px 
+            rgba(232, 102, 236, 1) 0 0 15px
+            rgba(232, 102, 236, 1);
           }
         </code>
       </div>
@@ -75,10 +80,9 @@
         <h2>Overlay Card with Title</h2>
         <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
         <code>
-          .row {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+          .card-header {
+            position: relative;
+            margin-top: -20px;
           }
         </code>
       </div>
