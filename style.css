@@ -1,0 +1,19 @@
+header {
+background-color:grey;
+
+}
+
+h1 {
+color: blueviolet;
+text-align: center;
+
+}
+
+header p {
+    color: white;
+    text-align: center;
+}
+
+.card-section {
+    flex: 1;
+}
