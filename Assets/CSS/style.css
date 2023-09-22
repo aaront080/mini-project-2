@@ -7,7 +7,11 @@
 }
 
 body {
-    background-color: var(--background-color)
+    background-color: var(--background-color);
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -22,25 +26,38 @@ header p {
     color: white;
 }
 
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+}
+
 .card h2 {
+    margin: 10px;
     color: var(--text-pink);
     border: solid white;
     width: 350px;
     margin-top: -20px;
     background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .card p {
     color: var(--text-pink);
+    margin: 10px;
 }
 
 .code-block {
+    display: flexbox;
     background-image: linear-gradient(
         rgba(232, 102, 236, 0.3) 0%,
         rgba(232, 102, 236, 0.6) 100%
     );
     width: 95%;
-    height: 150px;
+    height:150px;
+    margin: 10px;
 }
 
 .card code {
@@ -49,16 +66,14 @@ header p {
 }
 
 .card {
-    flex: auto;
-    justify-content: center;
     border: dashed white;
-    margin: 10px;
+    margin: 30px;
     width: 400px;
     height: 275px;
 }
 
-.card-section {
-    display: flex;
-    flex-wrap: wrap;
-    width:100%;
+footer {
+    text-align: center;
+    font-size: 200%;
+    color: var(--text-pink);
 }
